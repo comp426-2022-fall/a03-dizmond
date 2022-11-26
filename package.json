@@ -4,7 +4,7 @@
   "description": "This assignment will help you learn to create an installable Node.js module package. You'll also provide a command line interface with it.",
   "main": "./lib/roll.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./bin/cli.js --sides=10 --dice=2 --rolls=3"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/comp426-2022-fall/a03-dizmond#readme",
   "bin": {
-    "galosh.js": "./cli.js"
+    "roll-dice": "./bin/cli.js"
   },
   "dependencies": {
     "minimist": "^1.2.7"
-  }
+  },
+  "type": "module"
 }
